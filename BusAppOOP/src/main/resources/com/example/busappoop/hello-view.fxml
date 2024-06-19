@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="300.0"
+      spacing="5.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.busappoop.HelloController">
+    <padding>
+        <Insets bottom="35.0" left="20.0" right="20.0" top="35.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Log in here!">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Label>
+   <Label fx:id="loginErrorText" textFill="RED" />
+   <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="150.0" promptText="Username" />
+   <TextField fx:id="passwordField" maxHeight="-Infinity"
+              maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="20.0" prefWidth="150.0" promptText="Password" />
+    <Button onAction="#loginButton" text="Login" />
+   <Button mnemonicParsing="false" onAction="#switchToBus" text="Switch to Bus Screen" />
+</VBox>

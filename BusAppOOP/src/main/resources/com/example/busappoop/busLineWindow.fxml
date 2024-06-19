@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.busappoop.BusController">
+   <children>
+      <TableView fx:id="busLineTable" layoutX="25.0" layoutY="37.0" prefHeight="219.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colOd" prefWidth="75.0" text="Od" />
+            <TableColumn fx:id="colDo" prefWidth="75.0" text="Do" />
+            <TableColumn fx:id="colKrece" prefWidth="75.0" text="Kreće" />
+            <TableColumn fx:id="colStize" prefWidth="75.0" text="Stiže" />
+            <TableColumn fx:id="colCijena" prefWidth="75.0" text="Cijena" />
+            <TableColumn fx:id="colSlobodno" prefWidth="97.5999694824219" text="Max Slobodno" />
+        </columns>
+      </TableView>
+      <Button fx:id="logoutButton" layoutX="24.0" layoutY="353.0" mnemonicParsing="false" onAction="#logoutButton" text="Log Out" />
+      <Label fx:id="sessionText" layoutX="14.0" layoutY="5.0" text="Test Mode - No User Cached" />
+      <Label layoutX="25.0" layoutY="273.0" text="Rezervacije: " />
+      <Label fx:id="rezervacijeLabel" layoutX="91.0" layoutY="273.0" />
+      <ChoiceBox fx:id="rezervacijaPicker" layoutX="424.0" layoutY="278.0" prefWidth="150.0" />
+      <Button fx:id="rezervisiButton" layoutX="468.0" layoutY="327.0" mnemonicParsing="false"
+              onAction="#rezervisiKartu" text="Rezervisi" />
+   </children>
+</AnchorPane>
